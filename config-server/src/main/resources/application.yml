@@ -1,4 +1,6 @@
 server:
   port: 8888
   
-spring:  profiles:    active: native  cloud:    config:      server:        native:          search-locations: C:/microservice-repo
+spring:  cloud:    config:      server:
+        default-label: main        git:
+          uri: https://github.com/josemorais/microservices-repo          search-paths: fornecedor
