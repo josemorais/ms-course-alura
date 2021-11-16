@@ -1,12 +1,17 @@
 package br.com.alura.microservice.loja.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Compra {
-	
+
+	@Id
 	private Long pedidoId;
 	
 	private Integer tempoDePreparo;
 	
-	private String endereco;
+	private String enderecoDestino;
 
 	public Long getPedidoId() {
 		return pedidoId;
@@ -24,12 +29,13 @@ public class Compra {
 		this.tempoDePreparo = tempoDePreparo;
 	}
 
-	public String getEndereco() {
-		return endereco;
+	public String getEnderecoDestino() {
+		return enderecoDestino;
 	}
 
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+	public void setEnderecoDestino(String enderecoDestino) {
+		this.enderecoDestino = enderecoDestino;
 	}
+	
 	
 }

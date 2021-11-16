@@ -1,7 +1,7 @@
-package br.com.alura.microservice.loja.controller.dto;
+package br.com.alura.microservice.loja.dto;
 
 public class InfoPedidoDTO {
-	
+
 	private Long id;
 	
 	private Integer tempoDePreparo;
@@ -21,5 +21,6 @@ public class InfoPedidoDTO {
 	public void setTempoDePreparo(Integer tempoDePreparo) {
 		this.tempoDePreparo = tempoDePreparo;
 	}
+	
 	
 }
